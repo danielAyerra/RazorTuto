@@ -3,7 +3,7 @@ RazorTutorial with some modifications as I saw fit.
 
 ## Multiple Databases
 This project have different Database Contexts because two databases are used, depending on the environment. For Development, SqLite is used and for Production MariaDb is used.
-The very same context could have been used. Actually, there is no reason to make two Contexts in this case. However, and trying to be as real as posible, SqLite is no good for production, except maybe to keep Cookie/Session info.
+The very same context could have been used. Actually, there is no reason to make two Contexts in this case, since a generic one can be used for both databases. Anyways, and trying to be as real as posible, SqLite is no good for production, except maybe to keep Cookie/Session info... Until somebody messes with the file...
 
 TODO: Securize the MariaDb Connection String and extract it from appSettings.Production.json.
 
